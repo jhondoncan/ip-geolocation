@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geolocalizador de IP</title>
-    <link rel="shortcut icon" href="src/ip.ico">
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
-    <link rel="stylesheet" href="src/style.css">
-</head>
+    <link rel="shortcut icon" href="src/ip.ico" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
 
-<body>
-           
+  <body>
     <main class="container">
-        <h3 style="text-align:center"> Geolocalizar dirección IP 🕵🏽</h3>
-        <form id="form">
+      <h3 style="text-align: center">Geolocalizar dirección IP 🕵🏽</h3>
+      <form id="form">
         <label>
-            Dirección IP:
-            <input type="text" placeholder="Introduce aquí dirección la IP" id="input" autofocus autocomplete="off">
-            <small>Ejemplo: 54.85.132.205</small>
-            <button type="submit" id="submit">Buscar información de la IP</button>
+          Dirección IP:
+          <input
+            type="text"
+            placeholder="Introduce aquí la dirección IP"
+            id="input"
+            autofocus
+            autocomplete="off"
+          />
+          <small>Ejemplo: 54.85.132.205</small>
+          <button type="submit" id="submit">Buscar información de la IP</button>
         </label>
-        </form>
-       
-    <div>
-        <pre id="results">
-        </pre>
-    </div>
-    
+      </form>
+
+      <div>
+        <pre id="results"></pre>
+      </div>
     </main>
 
     <script src="src/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-    
-</body>
+  </body>
 </html>
